@@ -1,0 +1,45 @@
+@import url('./base.css');
+
+main {
+    margin-left: 100px;
+    margin-top: 6rem;
+    padding-right: 5rem;
+}
+
+main img {
+    margin-left: 1rem;
+}
+
+main span, main img {
+    transform: translateY(70%);
+}
+
+main p:nth-child(1) {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+main p:nth-child(2) {
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+main > section {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+section button {
+    color: var(--color-primary);
+    font-size: 32px;
+    border: none;
+    padding: 0 64px;
+    height: 100px;
+}
+
+section button:nth-of-type(2) {
+    color: var(--color-text-primary);
+    background-color: var(--color-primary);
+    margin-left: 1rem;
+    border: solid white 2px;
+}

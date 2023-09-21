@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@100;400&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --color-primary: #ff7b54;
+    --color-text-primary: #fff;
+    --font-fam: 'Inter', Roboto;
+}
+
+a, button {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+body {
+    background: var(--color-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-fam);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+nav {
+    display: inline-block;
+}
+
+header > a {
+    margin-left: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+nav > ul li {
+    margin-inline-end: 36px;
+    font-size: 20px;
+}
+
+header div img {
+    margin-right: 60px;
+    transform: translateY(0.5rem);
+}
+
+main {
+    margin-left: 8rem;
+    margin-top: 6rem;
+    padding-right: 5rem;
+}
+
+main img {
+    /* display: inline-block; */
+    margin-left: 1rem;
+}
+
+main span {
+    /* display: inline-block; */
+    transform: translateY(0.4rem);
+}
+
+main p:nth-child(1) {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+main p:nth-child(2) {
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+main > section {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+section button {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-left: 100px;
+    padding-top: 0.5rem;
+    padding-right: 64px;
+    padding-bottom: 0.5rem;
+    padding-left: 64px;
+    display: flex;
+}
+
+section button:nth-of-type(2) {
+    color: var(--color-text-primary);
+    background-color: var(--color-primary);
+    margin-left: 1rem;
+    border: solid white 2px;
+}

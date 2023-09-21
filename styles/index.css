@@ -10,10 +10,6 @@ main img {
     margin-left: 1rem;
 }
 
-main span, main img {
-    transform: translateY(70%);
-}
-
 main p:nth-child(1) {
     font-size: 128px;
     font-weight: bold;
@@ -29,12 +25,17 @@ main > section {
     margin-bottom: 5rem;
 }
 
+main span, main img {
+    transform: translateY(30px);
+}
+
 section button {
     color: var(--color-primary);
     font-size: 32px;
     border: none;
     padding: 0 64px;
     height: 100px;
+    display: flex;
 }
 
 section button:nth-of-type(2) {

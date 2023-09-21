@@ -1,5 +1,13 @@
 @import url('./base.css');
 
+.menu path {
+    fill: white;
+}
+
+.menu {
+    display: none;
+}
+
 main {
     margin-left: 100px;
     margin-top: 6rem;
@@ -43,4 +51,17 @@ section button:nth-of-type(2) {
     background-color: var(--color-primary);
     margin-left: 1rem;
     border: solid white 2px;
+}
+
+@media (width < 1400px) {
+    main p:nth-child(1) {
+        font-size: 98px;
+        font-weight: bold;
+    }
+}
+
+@media (width < 420px) {
+    .menu {
+        display: inline-block;
+    }
 }

@@ -22,11 +22,20 @@ body {
     font-family: var(--font-fam);
 }
 
+.menu path {
+    fill: white;
+}
+
+.menu-container {
+    display: none;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
+    align-items: flex-start;
 }
 
 nav {
@@ -52,4 +61,17 @@ nav > ul li {
 header div img, header div svg {
     margin-right: 60px;
     transform: translateY(0.5rem);
+}
+
+@media (width < 840px) {
+    nav > ul {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: var(--color-primary);
+    }
+
+    .menu-container {
+        display: block;
+    }
 }
